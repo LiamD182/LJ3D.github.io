@@ -1,0 +1,104 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Bolt"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "bolt",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "roughnessFactor" : 0.6338582634925842
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Bolt",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1
+                    },
+                    "indices" : 2,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4723,
+            "max" : [
+                0.4908674359321594,
+                1.1207278966903687,
+                0.42510372400283813
+            ],
+            "min" : [
+                -0.4908674359321594,
+                0,
+                -0.42510366439819336
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4723,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5123,
+            "count" : 14910,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 56676,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 56676,
+            "byteOffset" : 56676
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 29820,
+            "byteOffset" : 113352
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 143172,
+            "uri" : "Bolt.bin"
+        }
+    ]
+}
