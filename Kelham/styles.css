@@ -16,8 +16,8 @@ a:visited {
 
 .coolBox {
   float: left;
-  border: 5px outset #003377;
-  background-color: #999;
+  border: 5px outset #9b1d20;
+  background-color: #488f79;
   text-align: center;
   width: 50%;
   padding: 3px;
@@ -28,12 +28,12 @@ a:visited {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #005599;
+  background-color: #e1d8c9;
 }
 
 /* Style the header */
 header {
-  background-color: #003377;
+  background-color: #3d6364;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -51,7 +51,7 @@ nav {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #999;
+  background: #488f79;
   padding: 1px;
   color: black;
 }
@@ -71,7 +71,7 @@ article {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: #999;
+  background-color: #488f79;
   text-align: center;
   padding: 10px;
 }
@@ -80,7 +80,7 @@ article {
 footer {
   background-color: #003377;
   text-align: center;
-  color: #999;
+  color: #e1d8c9;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
