@@ -7,7 +7,7 @@ const qrResult = document.getElementById("qr-result");
 const outputData = document.getElementById("outputData");
 const btnScanQR = document.getElementById("btn-scan-qr");
 
-let scanning = false;
+let scanning = true;
 
 qrcode.callback = res => {
   if (res) {
