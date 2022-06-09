@@ -11,13 +11,13 @@ qrcode.callback = res => {
   if (res) {
     scanning = false;
 
-    // Check res contains substring "lj3d.github.io" because im security pro
-    if (res.includes("lj3d.github.io")) {
+    // Check res contains substring "https://lj3d.github.io" because im security pro
+    if (res.includes("https://lj3d.github.io") || !res.includes("#https://lj3d.github.io")) {
       window.location.replace(res);
     } else {
       alert("Invalid link");
     }
-    
+
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
