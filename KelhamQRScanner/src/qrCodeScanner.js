@@ -12,7 +12,7 @@ qrcode.callback = res => {
     scanning = false;
 
     // Check res contains substring "https://lj3d.github.io" because im security pro
-    if (res.includes("https://lj3d.github.io") || !res.includes("#https://lj3d.github.io")) {
+    if (res.includes("https://lj3d.github.io") && !res.includes("#https://lj3d.github.io")) {
       window.location.replace(res);
     } else {
       alert("Invalid link");
