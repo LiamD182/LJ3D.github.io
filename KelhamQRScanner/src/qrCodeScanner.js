@@ -11,14 +11,11 @@ qrcode.callback = res => {
   if (res) {
     scanning = false;
 
-    // Check res contains substring "https://lj3d.github.io" because im security pro
-    // Make sure it doesnt contain hashtags because they could be used to add the https://lj3d.github.io/ link onto the end of a malicious link
-    // For example:
-    // www.2877fksdfnj40.ru/39sdjc.html#https://lj3d.github.io/
-    if (res.includes("https://lj3d.github.io") && !res.includes("#")) {
+    // Check res *starts* with https://lj3d.github.io/
+    if (res.startsWith("https://lj3d.github.io/")) {
       window.location.replace(res);
     } else {
-      alert("Invalid link");
+      alert("Invalid QR Code");
     }
 
     video.srcObject.getTracks().forEach(track => {
