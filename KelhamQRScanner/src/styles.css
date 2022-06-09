@@ -16,6 +16,12 @@ h1 {
   padding: 15px;
 }
 
+p {
+  color: white;
+  margin: 0;
+  padding: 15px;
+}
+
 #container {
   text-align: center;
   margin: 0;
@@ -23,7 +29,7 @@ h1 {
 
 #qr-canvas {
   margin: auto;
-  width: calc(100% - 20px);
+  width: calc(100% - 5px);
   max-width: 400px;
 }
 
