@@ -11,8 +11,13 @@ qrcode.callback = res => {
   if (res) {
     scanning = false;
 
-    window.location.replace(res); // Lmao this is a terrible idea. Huge security concern, no error checking, yeah im fucking based? how could you tell?    Literally indian-tier code kek
-
+    // Check res contains substring "lj3d.github.io" because im security pro
+    if (res.includes("lj3d.github.io")) {
+      window.location.replace(res);
+    } else {
+      alert("Invalid link");
+    }
+    
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
