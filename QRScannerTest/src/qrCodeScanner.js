@@ -14,6 +14,8 @@ qrcode.callback = res => {
     outputData.innerText = res;
     scanning = false;
 
+    window.location.replace(res); // Lmao this is a terrible idea. Huge security concern, no error checking, yeah im fucking based? how could you tell?    Literally indian-tier code kek
+
     video.srcObject.getTracks().forEach(track => {
       track.stop();
     });
