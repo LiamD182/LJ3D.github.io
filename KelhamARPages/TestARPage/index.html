@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebAR Test</title>
+    <title>AR</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +15,9 @@
     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
     <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="test.js"></script>
   </head> 
-  <body>
+  <body onload="configModelViewer();">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
     <style>
       model-viewer {
