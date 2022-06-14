@@ -1,5 +1,3 @@
-const modelViewer = document.getElementsByTagName('model-viewer')[0];
-
 function GetURLParameter(sParam)
 {
     var sPageURL = window.location.search.substring(1);
@@ -15,7 +13,7 @@ function GetURLParameter(sParam)
 }
 
 function configModelViewer(){
-    var model = GetURLParameter('model');
+    const toggleModel = document.querySelector('#model');
     alert(model)
     modelViewer.setAttribute('src', model);
 }
