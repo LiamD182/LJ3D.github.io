@@ -17,6 +17,5 @@ function GetURLParameter(sParam)
 function configModelViewer(){
     var model = GetURLParameter('model');
     alert(model)
-    modelViewer.src = model;
+    modelViewer.setAttribute('src', model);
 }
-
