@@ -14,7 +14,7 @@ qrcode.callback = res => {
     if (res.startsWith("https://lj3d.github.io/")) {
       window.location.replace(res);
     } else {
-      alert("Invalid QR Code");
+      alert("Invalid QR Code, try again.");
     }
 
     video.srcObject.getTracks().forEach(track => {
