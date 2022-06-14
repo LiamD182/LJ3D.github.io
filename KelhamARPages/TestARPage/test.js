@@ -13,7 +13,7 @@ function GetURLParameter(sParam)
 }
 
 function configModelViewer(){
-    const toggleModel = document.querySelector('#model');
-    alert(model)
-    modelViewer.setAttribute('src', model);
+    var model = GetURLParameter("model");
+    const viewer = document.querySelector('#model');
+    viewer.setAttribute('src', model);
 }
